@@ -1,0 +1,28 @@
+ PSO Algorithm Steps
+
+1. **Initialization**:
+   - Define the problem space and bounds.
+   - Initialize a population of particles with random positions and velocities.
+   - Set personal best positions and global best position.
+
+2. **For each iteration**:
+   - For each particle:
+     1. Evaluate the objective function at the particle's current position.
+     2. If the current value is better than the particle's personal best:
+        - Update the personal best position and value.
+     3. If the current value is better than the global best:
+        - Update the global best position and value.
+     4. Update the particle's velocity:
+        \[
+        v_{i}^{new} = w \cdot v_{i}^{old} + c_1 \cdot r_1 \cdot (p_{i} - x_{i}) + c_2 \cdot r_2 \cdot (g - x_{i})
+        \]
+     5. Update the particle's position:
+        \[
+        x_{i}^{new} = x_{i}^{old} + v_{i}^{new}
+        \]
+     6. Ensure the particle's position is within bounds.
+
+3. **Termination**:
+   - Stop if the maximum number of iterations is reached or if a satisfactory solution is found.
+
+You can use this outline to implement the algorithm in your preferred programming language! If you need more details or examples, feel free to ask!
