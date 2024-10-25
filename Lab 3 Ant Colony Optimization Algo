@@ -1,0 +1,21 @@
+
+Overview of Ant Colony Optimization for TSP
+The ACO algorithm simulates a group of artificial ants that:
+1. Explore various routes.
+2. Leave "pheromones" on paths based on the quality of the route (shorter paths get more
+pheromones).
+3. Other ants are influenced by the pheromone levels and probability of choosing paths with stronger pheromone trails, leading to an exploration and reinforcement of better solutions over time.
+
+
+Algorithm Steps
+1. Initialize Pheromones: Set initial pheromone levels on all edges between cities.
+2. Construct Ant Solutions:
+Each ant constructs a complete tour by moving probabilistically between cities, influenced by pheromone levels and the distance (favoring closer cities).
+3. Evaluate Solutions:
+Calculate the length of each ant's tour.
+Identify the best tour in this iteration.
+4. Update Pheromones:
+Evaporate pheromones on all edges to avoid convergence to a single path.
+Deposit additional pheromone on paths of ants based on the quality of their solutions (shorter paths get more pheromone).
+5. Repeat:
+Repeat steps 2-4 for a set number of iterations or until a satisfactory solution is found.
