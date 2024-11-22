@@ -1,0 +1,25 @@
+algorithm CuckooSearch():
+    // INPUT
+    //    n = initial population size
+    //    Pa = fraction of worse nests to be abandoned and replaced
+    //    Max iterations = the maximum number of iterations
+    //    f = the objective function to optimize ()
+    // OUTPUT
+    //    The best solution found
+
+    Generate the initial population of n host nests Xi (i = 1, 2, ..., n)
+
+    while t < Max iterations:
+        Get a cuckoo randomly by Levy flights
+        Evaluate its quality fitness Fi
+
+        j <- choose a nest among n randomly
+
+        if Fi > Fj:
+            Replace j by the new solution
+
+        if A fraction (Pa) of worse nests are abandoned and new ones are built:
+            Keep the best solutions
+            Rank the solutions and find the current best
+
+    Postprocess results and visualization
