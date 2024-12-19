@@ -1,0 +1,18 @@
+Gene Expression Programming (GEP):
+
+INPUT:
+    n = Population size
+    Max_iter = Maximum number of iterations
+    f(x) = Objective function to optimize
+    lb, ub = Lower and upper bounds of the search space
+
+OUTPUT:
+    Best solution found during the process
+
+Steps:
+1. Initialize population: Create an initial population of programs (individuals) represented by expression trees.
+2. Evaluate fitness: Evaluate the fitness of each individual program using the objective function.
+3. Selection: Select individuals based on their fitness for reproduction.
+4. Crossover and mutation: Apply genetic operators (crossover and mutation) to produce new programs.
+5. Repeat until stopping criteria (Max_iter or convergence) are met.
+6. Return best solution found.
