@@ -1,0 +1,28 @@
+Grey Wolf Optimizer (GWO) Algorithm
+INPUT:
+
+n = number of wolves (population size)
+
+Max_iter = maximum number of iterations
+
+f(x) = objective function to be optimized
+
+lb,ub = lower and upper bounds of the search space
+OUTPUT:
+
+Best solution found by the algorithm
+Steps:
+1) Initialize positions of n wolves randomly within the search space.
+2) Evaluate fitness of each wolf using the objective function.
+3) Sort wolves based on fitness to identify alpha,beta nad delta wolves (best, second best, and third best).
+4) Update positions of wolves using the following formula:
+X_i_new = X_α - A ⋅ D_α
+X_i_new = X_β - B ⋅ D_β
+X_i_new = X_δ - C ⋅ D_δ​
+
+where 
+𝐴
+A, 𝐵 and 𝐶 are coefficient vectors, and 
+𝐷𝛼, D𝛽, D𝛿 are the distances from the wolves.
+5) Convergence check: Repeat until maximum iterations or stopping criterion is met.
+6) Return best solution found.
