@@ -1,0 +1,29 @@
+Genetic Algorithm (GA)
+
+1. **Initialize Population**:
+   - Randomly generate a population of `N` individuals, each represented as a chromosome.
+
+2. **Evaluate Fitness**:
+   - Calculate the fitness value for each individual in the population using the given objective function.
+
+3. **Selection**:
+   - Select individuals based on their fitness using techniques such as roulette wheel selection, tournament selection, or rank selection.
+   - Choose parents for crossover based on their probability of selection.
+
+4. **Crossover (Recombination)**:
+   - Select pairs of parents and exchange parts of their chromosomes to produce offspring.
+   - Use crossover techniques such as single-point, two-point, or uniform crossover.
+
+5. **Mutation**:
+   - Introduce random changes to the offspring's chromosomes with a small probability (mutation rate).
+   - This helps maintain genetic diversity in the population.
+
+6. **Form New Generation**:
+   - Replace the old population with the new offspring population.
+   - Optionally, retain the best individual from the previous generation (elitism).
+
+7. **Check Stopping Criteria**:
+   - Repeat steps 2–6 until a stopping condition is met (e.g., maximum number of generations or acceptable fitness value).
+
+8. **Output Solution**:
+   - Return the individual with the best fitness value as the optimal solution.
